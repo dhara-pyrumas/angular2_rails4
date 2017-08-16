@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <base href="/">
+	  <title>Angular2-Rails4</title>
+	  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+	  <%# Angular2 %>
+
+	  <%= javascript_include_tag 'https://code.angularjs.org/2.0.0-beta.8/Rx.umd.js' %>
+	  <%= javascript_include_tag 'https://code.angularjs.org/2.0.0-beta.8/angular2-polyfills.js' %>
+	  <%= javascript_include_tag 'https://code.angularjs.org/2.0.0-beta.8/angular2-all.umd.dev.js' %>
+
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<%#= yield %>
+		<my-app></my-app>
+	</body>
+</html>
