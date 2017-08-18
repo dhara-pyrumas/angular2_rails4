@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { HttpModule } from '@angular/http';
 
+import { MaterialModule } from '@angular/material';
+
 import { AppComponent } from './app.component';
 import { CircularComponent } from './circular/circular.component';
 import { SearchComponent } from './search/search.component';
@@ -13,7 +15,7 @@ import { SearchComponent } from './search/search.component';
     CircularComponent,
     SearchComponent
   ],
-  imports: [BrowserModule, HttpModule],
+  imports: [BrowserModule, HttpModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent]
 })
