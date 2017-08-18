@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../github/github.service';
 
@@ -14,11 +15,15 @@ export class SearchComponent implements OnInit {
 	public searchResult;
 	public searchCount;
 
-  constructor(private githubService: GithubService) { }
+  constructor(private router: Router, private githubService: GithubService) { }
 
   ngOnInit() {
 
   }
+
+	showUserDetail(user){
+		this.router.navigate(['user', user.login]);
+	}
 
 	onKeyup(event){
 		this.searchText = event.target.value;
